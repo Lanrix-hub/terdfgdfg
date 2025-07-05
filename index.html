@@ -21,9 +21,24 @@
             background-color: #1e1e1e;
             border-radius: 15px;
             padding: 30px;
-            max-width: 500px;
+            max-width: 600px;
             box-shadow: 0 0 20px rgba(0, 255, 150, 0.1);
             border: 1px solid #333;
+            position: relative;
+        }
+        
+        .partner-badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: linear-gradient(45deg, #6e48aa, #9d50bb);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            box-shadow: 0 0 10px rgba(157, 80, 187, 0.5);
+            z-index: 1;
         }
         
         .avatar {
@@ -68,6 +83,19 @@
             padding: 5px 10px;
             border-radius: 15px;
             font-size: 12px;
+            position: relative;
+        }
+        
+        .skill-level {
+            position: absolute;
+            bottom: -5px;
+            right: -5px;
+            background-color: #4caf50;
+            color: #121212;
+            font-size: 8px;
+            font-weight: bold;
+            padding: 2px 4px;
+            border-radius: 10px;
         }
         
         .section {
@@ -91,6 +119,7 @@
             display: flex;
             justify-content: center;
             gap: 15px;
+            margin-top: 10px;
         }
         
         a {
@@ -103,29 +132,89 @@
             color: #8bc34a;
             text-decoration: underline;
         }
+        
+        .partner-footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #9d50bb;
+        }
     </style>
 </head>
 <body>
     <div class="bio-card">
-        <div class="avatar"></></div>
+        <div class="partner-badge">Официальный партнер lunaweb.ru</div>
+        <img src="ava.png" class="avatar" alt="Lanrix">
         <h1>Lanrix</h1>
-        <div class="tagline">💻🚀 Крутой разработчик со 100% знанием</div>
+        <div class="tagline">💻🚀 Крутой разработчик с экспертизой в 60+ языках</div>
         
         <div class="skills">
-            <span class="skill">C++</span>
-            <span class="skill">C#</span>
-            <span class="skill">HTML</span>
-            <span class="skill">CSS</span>
-            <span class="skill">Java</span>
-            <span class="skill">JavaScript</span>
-            <span class="skill">Python</span>
-            <span class="skill">C</span>
-            <span class="skill">Go</span>
-            <span class="skill">TypeScript</span>
-            <span class="skill">Node.js</span>
-            <span class="skill">SQL</span>
-            <span class="skill">Shell</span>
-            <span class="skill">Bash</span>
+            <span class="skill">C++ <span class="skill-level">100%</span></span>
+            <span class="skill">C# <span class="skill-level">100%</span></span>
+            <span class="skill">HTML <span class="skill-level">100%</span></span>
+            <span class="skill">CSS <span class="skill-level">100%</span></span>
+            <span class="skill">Java <span class="skill-level">100%</span></span>
+            <span class="skill">JavaScript <span class="skill-level">100%</span></span>
+            <span class="skill">Python <span class="skill-level">100%</span></span>
+            <span class="skill">C <span class="skill-level">100%</span></span>
+            <span class="skill">Go <span class="skill-level">100%</span></span>
+            <span class="skill">TypeScript <span class="skill-level">100%</span></span>
+            <span class="skill">Node.js <span class="skill-level">100%</span></span>
+            <span class="skill">SQL <span class="skill-level">100%</span></span>
+            <span class="skill">Shell <span class="skill-level">100%</span></span>
+            <span class="skill">Bash <span class="skill-level">100%</span></span>
+            <span class="skill">Rust <span class="skill-level">95%</span></span>
+            <span class="skill">Kotlin <span class="skill-level">90%</span></span>
+            <span class="skill">Swift <span class="skill-level">85%</span></span>
+            <span class="skill">PHP <span class="skill-level">80%</span></span>
+            <span class="skill">Ruby <span class="skill-level">78%</span></span>
+            <span class="skill">Scala <span class="skill-level">75%</span></span>
+            <span class="skill">Dart <span class="skill-level">85%</span></span>
+            <span class="skill">R <span class="skill-level">70%</span></span>
+            <span class="skill">Perl <span class="skill-level">65%</span></span>
+            <span class="skill">Haskell <span class="skill-level">60%</span></span>
+            <span class="skill">Lua <span class="skill-level">88%</span></span>
+            <span class="skill">Assembly <span class="skill-level">92%</span></span>
+            <span class="skill">Elixir <span class="skill-level">75%</span></span>
+            <span class="skill">Clojure <span class="skill-level">68%</span></span>
+            <span class="skill">Groovy <span class="skill-level">72%</span></span>
+            <span class="skill">Julia <span class="skill-level">65%</span></span>
+            <span class="skill">F# <span class="skill-level">70%</span></span>
+            <span class="skill">Erlang <span class="skill-level">60%</span></span>
+            <span class="skill">OCaml <span class="skill-level">55%</span></span>
+            <span class="skill">Solidity <span class="skill-level">80%</span></span>
+            <span class="skill">VHDL <span class="skill-level">50%</span></span>
+            <span class="skill">Verilog <span class="skill-level">50%</span></span>
+            <span class="skill">MATLAB <span class="skill-level">75%</span></span>
+            <span class="skill">Fortran <span class="skill-level">40%</span></span>
+            <span class="skill">COBOL <span class="skill-level">30%</span></span>
+            <span class="skill">Pascal <span class="skill-level">65%</span></span>
+            <span class="skill">Ada <span class="skill-level">45%</span></span>
+            <span class="skill">Lisp <span class="skill-level">60%</span></span>
+            <span class="skill">Prolog <span class="skill-level">55%</span></span>
+            <span class="skill">Smalltalk <span class="skill-level">40%</span></span>
+            <span class="skill">Objective-C <span class="skill-level">70%</span></span>
+            <span class="skill">React <span class="skill-level">95%</span></span>
+            <span class="skill">Angular <span class="skill-level">90%</span></span>
+            <span class="skill">Vue <span class="skill-level">85%</span></span>
+            <span class="skill">Svelte <span class="skill-level">80%</span></span>
+            <span class="skill">Flutter <span class="skill-level">75%</span></span>
+            <span class="skill">React Native <span class="skill-level">85%</span></span>
+            <span class="skill">Django <span class="skill-level">90%</span></span>
+            <span class="skill">Flask <span class="skill-level">85%</span></span>
+            <span class="skill">Spring <span class="skill-level">80%</span></span>
+            <span class="skill">Laravel <span class="skill-level">75%</span></span>
+            <span class="skill">Ruby on Rails <span class="skill-level">70%</span></span>
+            <span class="skill">ASP.NET <span class="skill-level">85%</span></span>
+            <span class="skill">Express <span class="skill-level">95%</span></span>
+            <span class="skill">GraphQL <span class="skill-level">90%</span></span>
+            <span class="skill">Redis <span class="skill-level">85%</span></span>
+            <span class="skill">MongoDB <span class="skill-level">90%</span></span>
+            <span class="skill">PostgreSQL <span class="skill-level">95%</span></span>
+            <span class="skill">MySQL <span class="skill-level">100%</span></span>
+            <span class="skill">Firebase <span class="skill-level">80%</span></span>
+            <span class="skill">Docker <span class="skill-level">95%</span></span>
+            <span class="skill">Kubernetes <span class="skill-level">85%</span></span>
         </div>
         
         <div class="section">
@@ -143,7 +232,10 @@
         <div class="links">
             <a href="https://t.me/lanrix" target="_blank">Telegram</a>
             <a href="https://github.com/lanrix" target="_blank">GitHub</a>
+            <a href="https://lunaweb.ru" target="_blank">LunaWeb</a>
         </div>
+        
+        <div class="partner-footer">Официальный партнер lunaweb.ru — инновационные веб-решения</div>
     </div>
 </body>
 </html>
